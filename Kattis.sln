@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoDuplicates", "NoDuplicates\NoDuplicates.csproj", "{2DE98A4D-E8E9-4BB8-9720-9850B3F5768C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoDuplicates", "Easy\NoDuplicates\NoDuplicates.csproj", "{2DE98A4D-E8E9-4BB8-9720-9850B3F5768C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{0CC7065F-9517-4AC4-8D5B-00B264F18156}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DE98A4D-E8E9-4BB8-9720-9850B3F5768C} = {0CC7065F-9517-4AC4-8D5B-00B264F18156}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2971EAB-76A4-44BA-85C9-2EC5DBBA8CBE}
