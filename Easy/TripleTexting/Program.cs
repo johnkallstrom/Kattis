@@ -8,8 +8,9 @@ namespace TripleTexting
 		static void Main(string[] args)
 		{
 			string input = ReadInput();
+			string result = FindOriginalWord(input);
 
-			Console.WriteLine(input);
+			Console.WriteLine(result);
 		}
 
 		static string ReadInput()
