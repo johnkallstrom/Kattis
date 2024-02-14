@@ -1,2 +1,2 @@
 # Kattis
-https://open.kattis.com/users/john-kallstrom
+https://open.kattis.com/users/jnklm
