@@ -8,8 +8,8 @@ namespace TripleTexting
 		static void Main(string[] args)
 		{
 			string input = ReadInput();
-			string result = FindOriginalWord(input);
 
+			string result = FindOriginalWord(input);
 			Console.WriteLine(result);
 		}
 
@@ -28,7 +28,21 @@ namespace TripleTexting
 
 		static string FindOriginalWord(string input)
 		{
-			throw new NotImplementedException();
+			var characters = input.ToCharArray();
+
+			string result = "";
+			for (int i = 0; i < characters.Length; i++)
+			{
+				var current = characters[i];
+
+				if (i != 0 && current == characters.First())
+				{
+					result = input.Substring(0, i);
+					break;
+				}
+			}
+
+			return result;
 		}
 
 		static bool Valid(string input)
