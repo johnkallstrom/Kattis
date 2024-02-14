@@ -29,3 +29,5 @@ Sample Input 3
 THE RAIN IN SPAIN IN THE PLAIN
 Sample Output 3
 no
+
+https://open.kattis.com/problems/nodup
