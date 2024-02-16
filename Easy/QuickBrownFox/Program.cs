@@ -5,6 +5,10 @@
 		private const int MIN = 1;
 		private const int MAX = 50;
 
+		private static char[] ALPHABET = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+		private static string SYMBOLS = " .,?!`'\"";
+		private static string DIGITS = "0123456789";
+
 		static void Main(string[] args)
 		{
 			int number = ReadInteger();
@@ -16,10 +20,6 @@
 				if (IsPangram(input) == true)
 				{
                     Console.WriteLine("pangram");
-                }
-				else
-				{
-                    Console.WriteLine("missing");
                 }
             }
         }
@@ -62,22 +62,19 @@
 
 		static bool IsPangram(string phrase)
 		{
-			string symbols = " .,?!`\"";
-			char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
-			var letters = phrase.Trim().ToLower().ToCharArray();
-
 			for (int i = 0; i < phrase.Length; i++)
 			{
-				foreach (var l in letters)
-				{
-					if (!symbols.Contains(l) && !alphabet.Contains(l))
-					{
-						return false;
-					}
-				}
-			}
+				var letter = phrase[i];
 
-			return true;
+				if (SYMBOLS.Contains(letter) || DIGITS.Contains(letter))
+				{
+					continue;
+				}
+
+                Console.WriteLine(letter);
+            }
+
+			return false;
 		}
 	}
 }
