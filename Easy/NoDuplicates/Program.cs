@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace NoDuplicates
+﻿namespace NoDuplicates
 {
 	internal class Program
 	{
@@ -74,8 +70,7 @@ namespace NoDuplicates
 
 			foreach (var w in words)
 			{
-				string previous = "";
-				previous = current;
+				string previous = current;
 
 				if (!string.IsNullOrEmpty(previous))
 				{
