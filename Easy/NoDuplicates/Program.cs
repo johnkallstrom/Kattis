@@ -1,4 +1,8 @@
-﻿namespace NoDuplicates
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace NoDuplicates
 {
 	internal class Program
 	{
