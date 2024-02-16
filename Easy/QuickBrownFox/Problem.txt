@@ -27,3 +27,5 @@ Sample Output 1
 pangram
 missing eq
 missing klmnopqrstuvwxyz
+
+https://open.kattis.com/problems/quickbrownfox
