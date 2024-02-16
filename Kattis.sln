@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoDuplicates", "Easy\NoDupl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{0CC7065F-9517-4AC4-8D5B-00B264F18156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripleTexting", "Easy\TripleTexting\TripleTexting.csproj", "{38A76D63-AD28-4C3A-8337-6C9D186DB6E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripleTexting", "Easy\TripleTexting\TripleTexting.csproj", "{38A76D63-AD28-4C3A-8337-6C9D186DB6E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBrownFox", "QuickBrownFox\QuickBrownFox.csproj", "{AA19F1CF-9D21-4108-93FF-5F3CD511A3A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{38A76D63-AD28-4C3A-8337-6C9D186DB6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A76D63-AD28-4C3A-8337-6C9D186DB6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A76D63-AD28-4C3A-8337-6C9D186DB6E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA19F1CF-9D21-4108-93FF-5F3CD511A3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA19F1CF-9D21-4108-93FF-5F3CD511A3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA19F1CF-9D21-4108-93FF-5F3CD511A3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA19F1CF-9D21-4108-93FF-5F3CD511A3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2DE98A4D-E8E9-4BB8-9720-9850B3F5768C} = {0CC7065F-9517-4AC4-8D5B-00B264F18156}
 		{38A76D63-AD28-4C3A-8337-6C9D186DB6E1} = {0CC7065F-9517-4AC4-8D5B-00B264F18156}
+		{AA19F1CF-9D21-4108-93FF-5F3CD511A3A5} = {0CC7065F-9517-4AC4-8D5B-00B264F18156}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2971EAB-76A4-44BA-85C9-2EC5DBBA8CBE}
