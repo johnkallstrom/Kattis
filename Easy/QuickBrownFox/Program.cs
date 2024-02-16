@@ -15,9 +15,14 @@
 
 			for (int i = 1; i <= number; i++)
 			{
-				string input = ReadString();
+				string phrase = ReadString();
+				var missing = GetMissingLetters(phrase);
 
-				if (IsPangram(input) == true)
+				if (missing.Count() > 0)
+				{
+                    Console.WriteLine($"missing {new string(missing)}");
+                }
+				else
 				{
                     Console.WriteLine("pangram");
                 }
@@ -60,21 +65,24 @@
 			}
 		}
 
-		static bool IsPangram(string phrase)
+		static char[] GetMissingLetters(string phrase)
 		{
-			for (int i = 0; i < phrase.Length; i++)
-			{
-				var letter = phrase[i];
+			var matches = new List<char>();
 
+			foreach (var letter in phrase.ToLower())
+			{
 				if (SYMBOLS.Contains(letter) || DIGITS.Contains(letter))
 				{
 					continue;
 				}
 
-                Console.WriteLine(letter);
-            }
+				if (ALPHABET.Contains(letter))
+				{
+					matches.Add(letter);
+				}
+			}
 
-			return false;
+			return ALPHABET.Except(matches).ToArray();
 		}
 	}
 }
