@@ -1,4 +1,8 @@
-﻿namespace QuickBrownFox
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace QuickBrownFox
 {
 	internal class Program
 	{
