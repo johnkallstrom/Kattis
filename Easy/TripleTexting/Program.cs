@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace TripleTexting
+﻿namespace TripleTexting
 {
 	internal class Program
 	{
@@ -28,21 +25,12 @@ namespace TripleTexting
 
 		static string FindOriginalWord(string input)
 		{
-			var characters = input.ToCharArray();
-
-			string result = "";
-			for (int i = 0; i < characters.Length; i++)
+			for (int i = 0; i < input.Length; i++)
 			{
-				var current = characters[i];
-
-				if (i != 0 && current == characters.First())
-				{
-					result = input.Substring(0, i);
-					break;
-				}
+				var current = input[i];
 			}
 
-			return result;
+			return string.Empty;
 		}
 
 		static bool Valid(string input)
